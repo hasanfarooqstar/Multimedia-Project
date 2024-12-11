@@ -1,0 +1,19 @@
+{
+    "headers": [
+      {
+        "source": "/:all*(m3u8|ts)",
+        "headers": [
+          { "key": "Access-Control-Allow-Origin", "value": "*" },
+          { "key": "Content-Type", "value": "application/vnd.apple.mpegurl" }
+        ]
+      },
+      {
+        "source": "/:all*(ts)",
+        "headers": [
+          { "key": "Access-Control-Allow-Origin", "value": "*" },
+          { "key": "Content-Type", "value": "video/mp2t" }
+        ]
+      }
+    ]
+  }
+  
